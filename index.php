@@ -38,20 +38,30 @@
             <div class="form-group">
                 <label>Материал задника</label>
                 <select class="form-control" name="material-zadnik">
-                    <option value="df">sdf</option>
-                    <option></option>
-                    <option></option>
+                    <option value="orgalit">Оргалит</option>
+                    <option value="pvh">ПВХ 3 мм</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <label>Материал вставки</label>
                 <select class="form-control" name="material-vstavka">
-                    <option value="orgalit">Оргалит</option>
-                    <option value="pvh">ПВХ</option>
+                    <option value="akril">Акрил 2 мм</option>
+                    <option value="orgsteklo">Оргстекло</option>
                 </select>
             </div>
+
+            <div class="form-group">
+                <label>Количество</label>
+                <input class="form-control" type="text" name="kolichestvo" placeholder="Количество">
+            </div>
+
+            <div class="form-group">
+                <div class="btn btn-info" name="rasschitat">Рассчитать</div>
+            </div>      
         </form>
+        <div class="result"></div>
+
     </div>
     <script src="script.js"></script>
     <!-- Optional JavaScript -->
