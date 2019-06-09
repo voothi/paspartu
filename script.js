@@ -1,27 +1,20 @@
 "use strict";
 
-const formParams = {
-    "formParamsWidth": picInsert.picInsertWidth,
-    "formParamsLength": picInsert.picInsertLength,
-    // "formParamDepth": 0,
-    "formMaterial": 0,
-    "formParamDepth": 0,
-};
-
 const picInsert = {
-    "picInsertLength": 0,
-    "picInsertWidth": 0,
+    "picInsert-extVertical": 0,
+    "picInsert-extHorizontal": 0,
+
 };
 
 const frame = {
-    "frameExternalLength": 0,
-    "frameExternalWidth": 0,
-    "frameExternalWidth": 0,
+    "frame-extVertical": 0,
+    "frame-extHorizontal": 0,
 };
 
 const frameBaguette = [
     {
         "manufacturer": "nelson",
+        "material": "aluminium",
         "color": "silver",
         "price": {
             "value": 100,
@@ -30,13 +23,14 @@ const frameBaguette = [
             "amountUnit": 1,
             "physicalQuantity": "distance",
         },
-        "frameBaguetteExternalCommonLength": 0, //общий погонаж багета по большей стороне
-        "frameBaguetteFacialWidth": 25, //ширина лицевой части багета
-        "frameBaguetteProfileWidth": 9, //толщина профиля багета
-        "frameBaguetteProfileHeight": 12 //высота профиля багета
+        "frameBaguette-extLengthCommon": 0, //общий погонаж багета по большей стороне
+        "frameBaguette-width": 25, //ширина лицевой части багета
+        "frameBaguette-sectionWidth": 9, //толщина в срезе багета
+        "frameBaguette-sectionHeight": 12 //высота в срезе профиля багета
     },
     {
         "manufacturer": "nelson",
+        "material": "aluminium",
         "color": "black",
         "price": {
             "value": 200,
@@ -45,25 +39,75 @@ const frameBaguette = [
             "amountUnit": 1,
             "physicalQuantity": "distance",
         },
-        "frameBaguetteExternalCommonLength": 0, //общий погонаж багета по большей стороне
-        "frameBaguetteFacialWidth": 25, //ширина лицевой части багета
-        "frameBaguetteProfileWidth": 9, //толщина профиля багета
-        "frameBaguetteProfileHeight": 12 //высота профиля багета
+        "frameBaguette-extLengthCommon": 0, //общий погонаж багета по большей стороне
+        "frameBaguette-width": 25, //ширина лицевой части багета
+        "frameBaguette-sectionWidth": 9, //толщина в срезе багета
+        "frameBaguette-sectionHeight": 12 //высота в срезе профиля багета
     },
 ];
 
 const frameBack = [
     {
-        "color": "silver",
-        "price": 100,
-        "unit": "m",
-        "amountUnit": 1,
-        "conditions"
-        "frameBaguetteExternalLength": 0,
-        "frameBaguetteExternalWidth": 0,
-
-    }
+        "manufacturer": "nelson",
+        "material": "hardboard",
+        "color": "none",
+        "price": {
+            "value": 100,
+            "currency": "rub",
+            "unit": "m^2",
+            "amountUnit": 1,
+            "physicalQuantity": "area",
+        },
+        "frameBack-extVertical": 0,
+        "frameBack-extHorizontal": 0,
+        "frameBack-depth": 0,
+    },
+    {
+        "manufacturer": "nelson",
+        "material": "pvc",
+        "color": "none",
+        "price": {
+            "value": 300,
+            "currency": "rub",
+            "unit": "m^2",
+            "amountUnit": 1,
+            "physicalQuantity": "area",
+        },
+        "frameBack-extVertical": 0,
+        "frameBack-extHorizontal": 0,
+        "frameBack-depth": 3, //mm
+    },
 ];
 
-const cart;
-amountFrameBaguetteInCart
+const frameInsert = [
+    {
+        "manufacturer": "nelson",
+        "material": "acrylic",
+        "color": "transparent",
+        "price": {
+            "value": 500,
+            "currency": "rub",
+            "unit": "m^2",
+            "amountUnit": 1,
+            "physicalQuantity": "area",
+        },
+        "frameInsert-extVertical": 0,
+        "frameInsert-extHorizontal": 0,
+        "frameInser-depth": 3, //3мм
+    },
+    {
+        "manufacturer": "nelson",
+        "material": "plexiglass",
+        "color": "transparent",
+        "price": {
+            "value": 500,
+            "currency": "rub",
+            "unit": "m^2",
+            "amountUnit": 1,
+            "physicalQuantity": "area",
+        },
+        "frameInsert-extVertical": 0,
+        "frameInsert-extHorizontal": 0,
+        "frameInser-depth": 0,
+    },
+];
