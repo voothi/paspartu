@@ -1,14 +1,14 @@
 "use strict";
 
 const picInsert = {
-    "picInsert-extVertical": 0,
-    "picInsert-extHorizontal": 0,
+    "extVertical": 0,
+    "extHorizontal": 0,
 
 };
 
 const frame = {
-    "frame-extVertical": 0,
-    "frame-extHorizontal": 0,
+    "extVertical": 0,
+    "extHorizontal": 0,
 };
 
 const frameBaguette = [
@@ -23,10 +23,10 @@ const frameBaguette = [
             "amountUnit": 1,
             "physicalQuantity": "distance",
         },
-        "frameBaguette-extLengthCommon": 0, //общий погонаж багета по большей стороне
-        "frameBaguette-width": 25, //ширина лицевой части багета
-        "frameBaguette-sectionWidth": 9, //толщина в срезе багета
-        "frameBaguette-sectionHeight": 12 //высота в срезе профиля багета
+        "extLengthCommon": 0, //общий погонаж багета по большей стороне
+        "width": 25, //ширина лицевой части багета
+        "sectionWidth": 9, //толщина в срезе багета
+        "sectionHeight": 12 //высота в срезе профиля багета
     },
     {
         "manufacturer": "nelson",
@@ -39,10 +39,10 @@ const frameBaguette = [
             "amountUnit": 1,
             "physicalQuantity": "distance",
         },
-        "frameBaguette-extLengthCommon": 0, //общий погонаж багета по большей стороне
-        "frameBaguette-width": 25, //ширина лицевой части багета
-        "frameBaguette-sectionWidth": 9, //толщина в срезе багета
-        "frameBaguette-sectionHeight": 12 //высота в срезе профиля багета
+        "extLengthCommon": 0, //общий погонаж багета по большей стороне
+        "width": 25, //ширина лицевой части багета
+        "sectionWidth": 9, //толщина в срезе багета
+        "sectionHeight": 12 //высота в срезе профиля багета
     },
 ];
 
@@ -58,9 +58,9 @@ const frameBack = [
             "amountUnit": 1,
             "physicalQuantity": "area",
         },
-        "frameBack-extVertical": 0,
-        "frameBack-extHorizontal": 0,
-        "frameBack-depth": 0,
+        "extVertical": 0,
+        "extHorizontal": 0,
+        "depth": 0,
     },
     {
         "manufacturer": "nelson",
@@ -73,9 +73,9 @@ const frameBack = [
             "amountUnit": 1,
             "physicalQuantity": "area",
         },
-        "frameBack-extVertical": 0,
-        "frameBack-extHorizontal": 0,
-        "frameBack-depth": 3, //mm
+        "extVertical": 0,
+        "extHorizontal": 0,
+        "depth": 3, //mm
     },
 ];
 
@@ -91,9 +91,9 @@ const frameInsert = [
             "amountUnit": 1,
             "physicalQuantity": "area",
         },
-        "frameInsert-extVertical": 0,
-        "frameInsert-extHorizontal": 0,
-        "frameInser-depth": 3, //3мм
+        "extVertical": 0,
+        "extHorizontal": 0,
+        "depth": 3, //3мм
     },
     {
         "manufacturer": "nelson",
@@ -106,8 +106,8 @@ const frameInsert = [
             "amountUnit": 1,
             "physicalQuantity": "area",
         },
-        "frameInsert-extVertical": 0,
-        "frameInsert-extHorizontal": 0,
-        "frameInser-depth": 0,
+        "extVertical": 0,
+        "extHorizontal": 0,
+        "depth": 0,
     },
 ];
