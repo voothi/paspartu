@@ -24,7 +24,7 @@ const frameBaguette = [
             "physicalQuantity": "distance",
         },
         "extLengthCommon": 0, //общий погонаж багета по большей стороне
-        "width": 25, //ширина лицевой части багета
+        "width": 25, //ширина багета
         "sectionWidth": 9, //толщина в срезе багета
         "sectionHeight": 12 //высота в срезе профиля багета
     },
@@ -39,10 +39,10 @@ const frameBaguette = [
             "amountUnit": 1,
             "physicalQuantity": "distance",
         },
-        "extLengthCommon": 0, //общий погонаж багета по большей стороне
-        "width": 25, //ширина лицевой части багета
-        "sectionWidth": 9, //толщина в срезе багета
-        "sectionHeight": 12 //высота в срезе профиля багета
+        "extLengthCommon": 0,
+        "width": 25, 
+        "sectionWidth": 9, 
+        "sectionHeight": 12 
     },
 ];
 
