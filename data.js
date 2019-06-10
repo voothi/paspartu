@@ -7,15 +7,15 @@ const order = {
     "frameBaguettePrice": 0,
     "frameBackMaterial": 0,
     "frameInsertMaterial": 0,
-    "frameAmount": 0,
+    "frameAmount": 1,
     "perimeterSquareFrameBaguette": 0,
-    "areaSquareFrameBaguette": 0,
+    "areaSquarePicInsert": 0,
     "frameBaguetteCost": 0,
     calcPerimeterSquareFrameBaguette: function () {
-        this.perimeterSquareFrameBaguette = 2 * (this.picInsertExtHorizontal + this.picInsertExtVertical);
+        this.perimeterSquareFrameBaguette = (this.picInsertExtHorizontal + this.picInsertExtVertical) * 2;
     },
-    calcAreaSquareFrameBaguette: function () {
-        this.areaSquareFrameBaguette = this.picInsertExtHorizontal * this.picInsertExtVertical;
+    calcAreaSquarePicInsert: function () {
+        this.areaSquarePicInsert = this.picInsertExtHorizontal * this.picInsertExtVertical;
     },
     getFrameBaguettePrice: function () {
         this.frameBaguettePrice = (frameBaguette[this.frameBaguetteColor].price.value);
@@ -23,6 +23,9 @@ const order = {
     calcFrameBaguetteCost: function () {
         this.frameBaguetteCost = this.frameAmount * (this.perimeterSquareFrameBaguette * this.frameBaguettePrice);
     },
+    convertRubPennyToRub: function (param1) {
+        return param1 / 100;
+    }
 };
 
 const picInsert = {
