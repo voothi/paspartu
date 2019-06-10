@@ -3,7 +3,7 @@
 let forms = document.forms[0];
 let buttonCalculate = forms.querySelector('div[name="calculate"]');
 
-function fun1() {
+function getOrder() {
     // alert("еуые");
     order.picInsertExtHorizontal = forms.querySelector('input[name="picInsertExtHorizontal"]').value;
     order.picInsertExtVertical = forms.querySelector('input[name="picInsertExtVertical"]').value;
@@ -14,7 +14,7 @@ function fun1() {
     // console.log("test");
 }
 
-buttonCalculate.addEventListener("click", fun1);
+buttonCalculate.addEventListener("click", getOrder);
 
 
 
