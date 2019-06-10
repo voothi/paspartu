@@ -1,9 +1,10 @@
 "use strict";
 
+let value = selectl...
+
 const picInsert = {
     "extVertical": 0,
     "extHorizontal": 0,
-
 };
 
 const frame = {
@@ -11,8 +12,8 @@ const frame = {
     "extHorizontal": 0,
 };
 
-const frameBaguette = [
-    {
+const frameBaguette = {
+    "silver": {
         "manufacturer": "nelson",
         "material": "aluminium",
         "color": "silver",
@@ -24,11 +25,11 @@ const frameBaguette = [
             "physicalQuantity": "distance",
         },
         "extLengthCommon": 0, //общий погонаж багета по большей стороне
-        "width": 25, //ширина багета
+        "width": 25, //шиsрина багета
         "sectionWidth": 9, //толщина в срезе багета
         "sectionHeight": 12 //высота в срезе профиля багета
     },
-    {
+    "black": {
         "manufacturer": "nelson",
         "material": "aluminium",
         "color": "black",
@@ -40,11 +41,29 @@ const frameBaguette = [
             "physicalQuantity": "distance",
         },
         "extLengthCommon": 0,
-        "width": 25, 
-        "sectionWidth": 9, 
-        "sectionHeight": 12 
+        "width": 25,
+        "sectionWidth": 9,
+        "sectionHeight": 12
     },
-];
+};
+
+Заказ ~ Объект со элементами: ключ (имя поля формы) ~ значение (значение в этом поле на форме). Как получить из формы по нажатию кнопки "Заказать"?
+
+ВыбранныйПользователемБагет = frameBaguette[Заказ.Багет] // ЗаказБагет = "silver" или "black"
+
+Периметр = 2 * (Заказ.Длина + Заказ.Высота)
+
+СтоимостьБагета = Периметр * ВыбранныйПользователемБагет.ЦенаПогонногоМетра
+
+Площадь = Заказ.Длина * Заказ.Ширина;
+
+СтоимостьЗадника = Площадь * ВыбранныйПользователемЗадник.ЦенаКвадратногоМетра
+
+СтоимостьВставки = Площадь * ВыбраннаяПользователемВставка.ЦенаКвадратногоМетра
+
+СтоимостьРамки = СтоимостьБагета + СтоимостьЗадника + СтоимостьВставки
+
+передать в див результат
 
 const frameBack = [
     {
