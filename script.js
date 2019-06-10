@@ -7,16 +7,8 @@ function getOrder() {
     order.picInsertExtHorizontal = Number.parseInt(forms.querySelector('input[name="picInsertExtHorizontal"]').value);
     order.picInsertExtVertical = Number.parseInt(forms.querySelector('input[name="picInsertExtVertical"]').value);
     order.frameBaguetteColor = forms.querySelector('select[name="frameBaguetteColor"]').value;
-    // order.frameBaguetteColor = frameBaguette[order.frameBaguetteColor].color.ru;
-
     order.frameInsertMaterial = forms.querySelector('select[name="frameInsertMaterial"]').value;
-    // let frameInsertElementFromStore = frameInsert[order.frameInsertMaterial];
-    // order.frameInsertMaterial = frameInsertElementFromStore.material.ru + " " + frameInsertElementFromStore.depth + " мм";
-
     order.frameBackMaterial = forms.querySelector('select[name="frameBackMaterial"]').value;
-    // let frameBackElementFromStore = frameBack[order.frameBackMaterial];
-    // order.frameBackMaterial = frameBackElementFromStore.material.ru + " " + frameBackElementFromStore.depth + " мм";
- 
     order.frameAmount = Number.parseInt(forms.querySelector('input[name="frameAmount"]').value);
 
     // if(order.picInsertExtHorizontal <) {
