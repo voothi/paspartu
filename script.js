@@ -10,22 +10,21 @@ function getOrder() {
     order.frameBackMaterial = forms.querySelector('select[name="frameBackMaterial"]').value;
     order.frameInsertMaterial = forms.querySelector('select[name="frameInsertMaterial"]').value;
     order.frameAmount = forms.querySelector('input[name="frameAmount"]').value;
+    
+    order.calcPerimeterSquareFrameBaguette();
+    order.calcPerimeterSquareFrameBaguette();
 }
 
 buttonCalculate.addEventListener("click", getOrder);
 
-console.log(order.picInsertExtHorizontal);
+// console.log(order.picInsertExtHorizontal);
 
-let orderHorizontal = order.picInsertExtHorizontal;
-let orderVertical = order.picInsertExtVertical;
-let orderFrameBaguette = frameBaguette[order.frameBaguetteColor];
-let orderFrameBack = frameBack[order.frameBackMaterial];
-let orderFrameInsert = frameInsert[order.frameInsertMaterial];
-let orderFrameAmount = order.frameAmount;
+// let orderHorizontal = order.picInsertExtHorizontal;
+// let orderVertical = order.picInsertExtVertical;
+// let orderFrameBaguette = frameBaguette[order.frameBaguetteColor];
+// let orderFrameBack = frameBack[order.frameBackMaterial];
+// let orderFrameInsert = frameInsert[order.frameInsertMaterial];
+// let orderFrameAmount = order.frameAmount;
 
-function calcPerimeterSquareFrameBaguette(calcOrderHorizontal, calcOrderVertical) {
-    return 2 * (calcOrderHorizontal + calcOrderVertical);
-}
-
-let orderFrameBaguetteCost = calcPerimeterSquareFrameBaguette(orderHorizontal, orderVertical) * orderFrameBaguette.price.value;
+// let orderFrameBaguetteCost = calcPerimeterSquareFrameBaguette(order.picInsertExtHorizontal, order.picInsertExtVertical) * frameBaguette[order.frameBaguetteColor].price.value;
 // let orderFramePerimeter

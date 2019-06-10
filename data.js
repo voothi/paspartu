@@ -4,9 +4,25 @@ const order = {
     "picInsertExtHorizontal": 0,
     "picInsertExtVertical": 0,
     "frameBaguetteColor": 0,
+    "frameBaguettePrice": 0,
     "frameBackMaterial": 0,
     "frameInsertMaterial": 0,
-    "frameAmount": 0
+    "frameAmount": 0,
+    "perimeterSquareFrameBaguette": 0,
+    "areaSquareFrameBaguette": 0,
+    "frameBaguetteCost": 0,
+    calcPerimeterSquareFrameBaguette: function () {
+        this.perimeterSquareFrameBaguette = 2 * (this.picInsertExtHorizontal + this.picInsertExtVertical);
+    },
+    calcAreaSquareFrameBaguette: function () {
+        this.areaSquareFrameBaguette = this.picInsertExtHorizontal * this.picInsertExtVertical;
+    },
+    getFrameBaguettePrice: function () {
+        this.frameBaguettePrice = (frameBaguette[this.frameBaguetteColor].price.value);
+    },
+    calcFrameBaguetteCost: function () {
+        this.frameBaguetteCost = this.frameAmount * (this.perimeterSquareFrameBaguette * this.frameBaguettePrice);
+    },
 };
 
 const picInsert = {
@@ -25,10 +41,10 @@ const frameBaguette = {
         "material": "aluminium",
         "color": "silver",
         "price": {
-            "value": 100,
-            "currency": "rub",
+            "value": 10,
+            "currency": "penny rub",
             "unit": "mm",
-            "amountUnit": 1000,
+            "amountUnit": 1,
             "physicalQuantity": "distance",
         },
         "extLengthCommon": 0, //общий погонаж багета по большей стороне
@@ -41,10 +57,10 @@ const frameBaguette = {
         "material": "aluminium",
         "color": "black",
         "price": {
-            "value": 200,
-            "currency": "rub",
+            "value": 20,
+            "currency": "penny rub",
             "unit": "mm",
-            "amountUnit": 1000,
+            "amountUnit": 1,
             "physicalQuantity": "distance",
         },
         "extLengthCommon": 0,
@@ -61,7 +77,7 @@ const frameBack = {
         "color": "none",
         "price": {
             "value": 100,
-            "currency": "rub",
+            "currency": "penny rub",
             "unit": "mm^2",
             "amountUnit": 1000000,
             "physicalQuantity": "area",
@@ -76,7 +92,7 @@ const frameBack = {
         "color": "none",
         "price": {
             "value": 300,
-            "currency": "rub",
+            "currency": "penny rub",
             "unit": "mm^2",
             "amountUnit": 1000000,
             "physicalQuantity": "area",
@@ -94,7 +110,7 @@ const frameInsert = {
         "color": "transparent",
         "price": {
             "value": 500,
-            "currency": "rub",
+            "currency": "penny rub",
             "unit": "mm^2",
             "amountUnit": 1000000,
             "physicalQuantity": "area",
@@ -109,7 +125,7 @@ const frameInsert = {
         "color": "transparent",
         "price": {
             "value": 500,
-            "currency": "rub",
+            "currency": "penny rub",
             "unit": "mm^2",
             "amountUnit": 1000000,
             "physicalQuantity": "area",
