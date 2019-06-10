@@ -16,47 +16,47 @@
     <div class="wrapper-form row justify-content-center">
         <form>
             <div class="form-group">
+                <label>Ширина, мм</label>
+                <input class="form-control" type="text" name="picInsertExtHorizontal" placeholder="Ширина, мм">
+            </div>
+            
+            <div class="form-group">
                 <label>Длина, мм</label>
-                <input class="form-control" type="text" name="picInsert-extVertical" placeholder="Длина, мм">
+                <input class="form-control" type="text" name="picInsertExtVertical" placeholder="Длина, мм">
                 </label>
             </div>
 
             <div class="form-group">
-                <label>Ширина, мм</label>
-                <input class="form-control" type="text" name="picInsert-extHorizontal" placeholder="Ширина, мм">
-            </div>
-
-            <div class="form-group">
                 <label>Материал багета</label>
-                <select class="form-control" name="frameBaguette-color">
-                    <option value="silver">Серебро</option>
-                    <option value="black">Черный</option>
+                <select class="form-control" name="frameBaguetteColor">
+                    <option data-price="100" value="silver">Серебро</option>
+                    <option data-price="200" value="black">Черный</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <label>Материал задника</label>
-                <select class="form-control" name="frameBack-material">
-                    <option value="orgalit">Оргалит</option>
-                    <option value="pvh">ПВХ 3 мм</option>
+                <select class="form-control" name="frameBackMaterial">
+                    <option data-price="100" value="hardboard">Оргалит</option>
+                    <option data-price="300" value="pvc">ПВХ 3 мм</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <label>Материал вставки</label>
-                <select class="form-control" name="frameInsert-material">
-                    <option value="akril">Акрил 2 мм</option>
-                    <option value="orgsteklo">Оргстекло</option>
+                <select class="form-control" name="frameInsertMaterial">
+                    <option data-price="500" value="acrylic">Акрил 2 мм</option>
+                    <option data-price="500" value="orgsteklo">Оргстекло</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <label>Количество</label>
-                <input class="form-control" type="text" name="amount" placeholder="Количество">
+                <input class="form-control" type="text" name="frameAmount" placeholder="Количество">
             </div>
 
             <div class="form-group">
-                <button class="btn btn-info" name="calculate">Рассчитать</button>
+                <div class="btn btn-info" name="calculate">Рассчитать</div>
             </div>
         </form>
         <div class="result"></div>

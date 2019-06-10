@@ -1,5 +1,14 @@
 "use strict";
 
+const order = {
+    "picInsertExtHorizontal": 0,
+    "picInsertExtVertical": 0,
+    "frameBaguetteColor": 0,
+    "frameBackMaterial": 0,
+    "frameInsertMaterial": 0,
+    "frameAmount": 0
+};
+
 const picInsert = {
     "extVertical": 0,
     "extHorizontal": 0,

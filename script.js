@@ -1,16 +1,20 @@
 "use strict";
 
-const order = {
-    "frameBaguette-color": 
-};
-
 let forms = document.forms[0];
-let buttonFrameBaguetteColor = forms.querySelector('select[name="frameBaguette-color"]');
-let buttonCalculate = forms.querySelector('button[name="calculate"]');
+let buttonCalculate = forms.querySelector('div[name="calculate"]');
 
-buttonCalculate.addEventListener("click", calcBaget);
-// let frameBaguetteColor = document.querySelector("select[frameBaguette-color]");
-// let SelectedBaget = frameBaguette.buttonFrameBaguetteColor;
-function calcBaget() {
-    return
+function fun1() {
+    // alert("еуые");
+    order.picInsertExtHorizontal = forms.querySelector('input[name="picInsertExtHorizontal"]').value;
+    order.picInsertExtVertical = forms.querySelector('input[name="picInsertExtVertical"]').value;
+    order.frameBaguetteColor = forms.querySelector('select[name="frameBaguetteColor"]').value;
+    order.frameBackMaterial = forms.querySelector('select[name="frameBackMaterial"]').value;
+    order.frameInsertMaterial = forms.querySelector('select[name="frameInsertMaterial"]').value;
+    order.frameAmount = forms.querySelector('input[name="frameAmount"]').value;
+    // console.log("test");
 }
+
+buttonCalculate.addEventListener("click", fun1);
+
+
+
