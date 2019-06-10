@@ -48,27 +48,24 @@ function outResult() {
     resultDiv.innerText =
         `
 Заказ:
+
 Тираж: ${order.frameAmount} шт.
+
 - Багет -
-Цвет: ${order.frameBaguetteColor}
-Цвет: ${frameBaguette[order.frameBaguetteColor].color.ru}
-
-Цена: ${order.frameBaguettePrice} коп./мм
+    Цвет: ${frameBaguette[order.frameBaguetteColor].color.ru}
+    Цена: ${order.frameBaguettePrice} коп./мм
 Стоимость: ${order.convertRubPennyToRub(order.frameBaguetteCost)} руб.
+
 - Вставка -
-Материал: ${order.frameInsertMaterial}
-Материал: ${frameInsert[order.frameInsertMaterial].material.ru + " " + frameInsert[order.frameInsertMaterial].depth + " мм"}
-
-
-Цена: ${order.frameInsertPrice} коп./кв. мм 
+    Материал: ${frameInsert[order.frameInsertMaterial].material.ru + " " + frameInsert[order.frameInsertMaterial].depth + " мм"}
+    Цена: ${order.frameInsertPrice} коп./кв. мм 
 Стоимость: ${order.convertRubPennyToRub(order.frameBackCost)} руб.
-- Задник -
-Материал: ${order.frameBackMaterial}
-Материал: ${frameBack[order.frameBackMaterial].material.ru + " " + frameBack[order.frameBackMaterial].depth + " мм"}
 
-Цена: ${order.frameBackPrice} коп./кв. мм 
+- Задник -
+    Материал: ${frameBack[order.frameBackMaterial].material.ru + " " + frameBack[order.frameBackMaterial].depth + " мм"}
+    Цена: ${order.frameBackPrice} коп./кв. мм 
 Стоимость: ${order.convertRubPennyToRub(order.frameInsertCost)} руб.
-***
+
 Сумма: ${order.convertRubPennyToRub(order.orderSumCost)} руб.
         `;
 }
